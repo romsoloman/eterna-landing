@@ -19,7 +19,7 @@ const SocialLinks = () => {
         href={`https://wa.me/<${CONTACT_PHONE}>?text=Hello, I'm interested in your products!`}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center text-green-600 hover:text-green-800"
+        className="flex items-center text-[#2d2c2c] hover:text-black"
       >
         <WhatsAppIcon className="h-5 w-5" />
       </Link>
