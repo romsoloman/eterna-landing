@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <div className="px-8 my-10 flex flex-col gap-8 items-center justify-center">
       <h1 className="text-3xl">קצת עלינו</h1>
-      <div className="text-center">
+      <div className="text-center leading-[28px] text-gray-600">
         ברוכים הבאים ל- Eterna – מסורת, איכות ותשוקה לתכשיטים. אנו דור שלישי
         בענף היהלומים, וממשיכים את דרכו של סבנו שהיה לוטש יהלומים ואבינו שסוחר
         ביהלומים. החזון שלנו משלב מורשת משפחתית עשירה עם עיצוב חדשני ודיוק שאין

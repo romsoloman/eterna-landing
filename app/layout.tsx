@@ -4,6 +4,7 @@ import { Heebo } from "next/font/google"
 import "../styles/globals.css"
 import Header from "@/components/ui/header"
 import { Container } from "@/components/ui/container"
+import Footer from "@/components/ui/footer"
 
 const heebo = Heebo({
   subsets: ["hebrew", "latin"],
@@ -27,6 +28,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <main>
           <Container>{children}</Container>
         </main>
+        <Footer />
       </body>
     </html>
   )
