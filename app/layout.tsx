@@ -2,6 +2,8 @@ import type { ReactNode } from "react"
 import { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "../styles/globals.css"
+import Header from "@/components/ui/header"
+import { Container } from "@/components/ui/container"
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({
@@ -20,7 +22,13 @@ export default function Layout({ children }: { children: ReactNode }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body>{children}</body>
+
+      <body>
+        <Header />
+        <main>
+          <Container>{children}</Container>
+        </main>
+      </body>
     </html>
   )
 }

@@ -17,7 +17,7 @@ export const Container = ({
   const Component: FunctionComponent<HTMLAttributes<HTMLDivElement>> =
     el as never
   return (
-    <Component className={clsx(className, !clean && "mx-auto max-w-8xl")}>
+    <Component className={clsx(className, !clean && "container mx-auto")}>
       {children}
     </Component>
   )
