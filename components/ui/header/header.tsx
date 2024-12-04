@@ -1,8 +1,8 @@
 "use client"
 
 import React from "react"
-import SocialLinks from "./social-links"
-import Logo from "../icons/Logo"
+import Logo from "../../icons/Logo"
+import SocialLinks from "../social-links/social-links"
 
 const Header = () => {
   return (

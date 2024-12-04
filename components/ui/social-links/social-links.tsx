@@ -1,8 +1,8 @@
-import { CONTACT_PHONE } from "@/lib/constants"
 import Link from "next/link"
 import React from "react"
-import { WhatsAppIcon } from "../icons/WhatsAppIcon"
-import { InstagramIcon } from "../icons/InstagramIcon"
+import { WhatsAppIcon } from "../../icons/WhatsAppIcon"
+import { InstagramIcon } from "../../icons/InstagramIcon"
+import { CONTACT_PHONE } from "./social-links.consts"
 
 const SocialLinks = () => {
   return (
