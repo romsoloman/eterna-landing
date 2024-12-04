@@ -1,0 +1,14 @@
+[
+  {
+    "original": "/images/gallery-1.jpg",
+    "thumbnail": "/images/gallery-1-thumb.jpg"
+  },
+  {
+    "original": "/images/gallery-2.jpg",
+    "thumbnail": "/images/gallery-2-thumb.jpg"
+  },
+  {
+    "original": "/images/gallery-3.jpg",
+    "thumbnail": "/images/gallery-3-thumb.jpg"
+  }
+]

@@ -2,9 +2,10 @@ import type { ReactNode } from "react"
 import { Metadata } from "next"
 import { Heebo } from "next/font/google"
 import "../styles/globals.css"
-import Header from "@/components/ui/header"
 import { Container } from "@/components/ui/container"
-import Footer from "@/components/ui/footer"
+import { seoConfig } from "@/lib/seo/seo.config"
+import Header from "@/components/ui/header/header"
+import Footer from "@/components/ui/footer/footer"
 
 const heebo = Heebo({
   subsets: ["hebrew", "latin"],
@@ -13,8 +14,24 @@ const heebo = Heebo({
 })
 
 export const metadata: Metadata = {
-  title: "Next.js and Contentstack",
-  description: "Example using the Next.js App Router."
+  title: seoConfig.defaultTitle,
+  description: seoConfig.defaultDescription,
+  keywords: seoConfig.defaultKeywords,
+  openGraph: {
+    type: "website",
+    locale: seoConfig.openGraph.locale,
+    title: seoConfig.defaultTitle,
+    description: seoConfig.defaultDescription,
+    siteName: seoConfig.openGraph.siteName,
+    images: [
+      {
+        url: seoConfig.openGraph.images[0].url,
+        width: seoConfig.openGraph.images[0].width,
+        height: seoConfig.openGraph.images[0].height,
+        alt: seoConfig.openGraph.images[0].alt
+      }
+    ]
+  }
 }
 
 export default function Layout({ children }: { children: ReactNode }) {

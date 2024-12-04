@@ -1,0 +1,21 @@
+{
+  "title": "Eterna - תכשיטים איכותיים בעיצוב אישי",
+  "description": "ברוכים הבאים ל-Eterna, מקום שבו איכות ויוקרה נפגשים. עיצובים ייחודיים לכל רגע בחיים.",
+  "keywords": [
+    "תכשיטים יוקרתיים",
+    "טבעות יהלום",
+    "עיצוב אישי",
+    "איכות ללא פשרות",
+    "תכשיטים לנשים"
+  ],
+  "openGraph": {
+    "type": "website",
+    "locale": "he_IL",
+    "siteName": "Eterna"
+  },
+  "images": {
+    "default": "/images/eterna-logo.png",
+    "favicon": "/images/favicon.ico",
+    "alt": "Eterna - תכשיטים איכותיים בעיצוב אישי"
+  }
+}
