@@ -19,7 +19,7 @@ const ProductItem = ({
   image,
   contactText
 }: ProductItemProps) => (
-  <div className="border shadow-md p-4 rounded-md">
+  <div className="border p-4 rounded-md flex flex-col items-center sm:items-start">
     <Image
       src={image}
       alt={title}
@@ -27,15 +27,17 @@ const ProductItem = ({
       height={300}
       className="w-full h-64 object-cover rounded-md mb-4"
     />
-    <h3 className="text-lg font-bold mb-2">{title}</h3>
-    <p className="text-sm text-gray-600 mb-4">{description}</p>
+    <h3 className="text-lg font-bold mb-2 text-center sm:text-left">{title}</h3>
+    <p className="text-sm text-gray-600 mb-4 text-center sm:text-left">
+      {description}
+    </p>
     <Link
       href={`https://wa.me/<${CONTACT_PHONE}>?text=${encodeURIComponent(
         commonTexts.whatsappMessage
       )}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-block px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+      className="block w-full sm:w-auto px-4 py-2 bg-green-500 text-white rounded text-center hover:bg-green-600"
     >
       {contactText}
     </Link>

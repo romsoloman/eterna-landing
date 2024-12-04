@@ -7,7 +7,7 @@ import ProductItem from "./product-item"
 
 const ProductList = () => {
   return (
-    <section className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <section className="py-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 px-4">
       {products.map((product) => (
         <ProductItem
           key={product.title + product.id}
