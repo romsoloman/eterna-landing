@@ -10,5 +10,21 @@
   {
     "original": "/images/gallery-3.jpg",
     "thumbnail": "/images/gallery-3-thumb.jpg"
+  },
+  {
+    "original": "/images/gallery-4.jpg",
+    "thumbnail": "/images/gallery-4-thumb.jpg"
+  },
+  {
+    "original": "/images/gallery-5.jpg",
+    "thumbnail": "/images/gallery-5-thumb.jpg"
+  },
+  {
+    "original": "/images/gallery-6.jpg",
+    "thumbnail": "/images/gallery-6-thumb.jpg"
+  },
+  {
+    "original": "/images/gallery-7.jpg",
+    "thumbnail": "/images/gallery-7-thumb.jpg"
   }
 ]

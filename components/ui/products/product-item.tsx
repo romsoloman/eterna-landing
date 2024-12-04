@@ -19,12 +19,12 @@ const ProductItem = ({
   image,
   contactText
 }: ProductItemProps) => (
-  <div className="border p-4 rounded-md flex flex-col items-center sm:items-start">
+  <div className="p-4 rounded-md flex flex-col items-center sm:items-start">
     <Image
       src={image}
       alt={title}
-      width={400}
-      height={300}
+      width={300}
+      height={200}
       className="w-full h-64 object-cover rounded-md mb-4"
     />
     <h3 className="text-lg font-bold mb-2 text-center sm:text-left">{title}</h3>

@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "title": "1.5 Carat Oval Lab Diamond Ring",
-    "description": "Color: D-F, Clarity: VVS, Cut: Excellent. Available in all sizes.",
+    "title": "טבעת 1.5 קראט אובל יהלום מעבדה",
+    "description": "צבע: D-F, נקיון: VVS, עבודה: Excellent. זמין לכל הגדלים",
     "image": "/images/product1.jpg"
   },
   {
     "id": 2,
-    "title": "2.0 Carat Round Brilliant Ring",
-    "description": "Color: G-H, Clarity: VS1, Cut: Excellent. Customizable designs.",
+    "title": "שרשרת יהלום מעבדה מרחף",
+    "description": "צבע: G-H, נקיון: VVS, עבודה: Excellent. זמין לכל הגדלים.",
     "image": "/images/product2.jpg"
   }
 ]
