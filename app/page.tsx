@@ -8,11 +8,10 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <AboutUs />
       <ProductList />
       <BenefitsList />
-      <AboutUs />
       <CustomImageGallery />
-      {/* CONTACT US BUTTON */}
     </>
   )
 }

@@ -2,7 +2,6 @@ import type { ReactNode } from "react"
 import { Metadata } from "next"
 import { Heebo } from "next/font/google"
 import "../styles/globals.css"
-import { Container } from "@/components/ui/container"
 import { seoConfig } from "@/lib/seo/seo.config"
 import Header from "@/components/ui/header/header"
 import Footer from "@/components/ui/footer/footer"
@@ -42,9 +41,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       </head>
       <body>
         <Header />
-        <main>
-          <Container>{children}</Container>
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

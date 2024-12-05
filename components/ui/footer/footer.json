@@ -1,0 +1,33 @@
+{
+  "rights": "כל הזכויות שמורות ל",
+  "name": "StudioRS ",
+  "media": "המדיה שלנו",
+  "aboutUs": {
+    "title": "קצת עלינו",
+    "address": {
+      "title": "כתובת",
+      "text": "רחוב הציונות 1, תל אביב"
+    },
+    "hours": {
+      "title": "שעות פתיחה",
+      "text": "ראשון-חמישי 10:00-18:00"
+    }
+  },
+  "socialLinks": [
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/eterna",
+      "text": "פייסבוק"
+    },
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/eterna/",
+      "text": "אינסטגרם"
+    },
+    {
+      "name": "whatsapp",
+      "url": "https://wa.me/972546666666",
+      "text": "וואטסאפ"
+    }
+  ]
+}

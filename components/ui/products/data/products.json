@@ -2,13 +2,23 @@
   {
     "id": 1,
     "title": "טבעת 1.5 קראט אובל יהלום מעבדה",
-    "description": "צבע: D-F, נקיון: VVS, עבודה: Excellent. זמין לכל הגדלים",
-    "image": "/images/product1.jpg"
+    "description": {
+      "color": "D-F",
+      "clarity": "VVS",
+      "cut": "Excellent",
+      "size": "זמין לכל הגדלים"
+    },
+    "image": "/images/product1.webp"
   },
   {
     "id": 2,
     "title": "שרשרת יהלום מעבדה מרחף",
-    "description": "צבע: G-H, נקיון: VVS, עבודה: Excellent. זמין לכל הגדלים.",
-    "image": "/images/product2.jpg"
+    "description": {
+      "color": "G-H",
+      "clarity": "VVS",
+      "cut": "Excellent",
+      "size": "זמין לכל הגדלים"
+    },
+    "image": "/images/product2.webp"
   }
 ]

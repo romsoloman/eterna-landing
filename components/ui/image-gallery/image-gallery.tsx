@@ -21,7 +21,7 @@ const CustomImageGallery = () => {
       viewport={{ once: true }}
       variants={galleryContainerVariants}
     >
-      <h2 className="text-center text-2xl font-bold mb-6">{texts.title}</h2>
+      <h2 className="text-center text-3xl mb-8">{texts.title}</h2>
       <ImageGallery
         items={images.map((image) => ({
           ...image,
@@ -29,7 +29,7 @@ const CustomImageGallery = () => {
             <motion.img
               src={image.original}
               alt=""
-              className="rounded-md"
+              className="rounded-md w-[400px] h-[400px] object-contain "
               variants={imageVariants}
               initial="hidden"
               whileInView="visible"
@@ -37,9 +37,11 @@ const CustomImageGallery = () => {
             />
           )
         }))}
-        showThumbnails={true}
+        showThumbnails={false}
         showPlayButton={false}
         showFullscreenButton={true}
+        autoPlay={true}
+        showNav={false}
       />
     </motion.div>
   )

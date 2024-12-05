@@ -1,26 +1,57 @@
-import SocialLinks from "../social-links/social-links"
+import Link from "next/link"
+import texts from "./footer.json"
+import { InstagramIcon } from "@/components/icons/InstagramIcon"
+import { ReactNode } from "react"
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon"
+import { FacebookIcon } from "@/components/icons/FacebookIcon"
 
+const iconsMap: Record<string, ReactNode> = {
+  instagram: <InstagramIcon />,
+  facebook: <FacebookIcon />,
+  whatsapp: <WhatsAppIcon />
+}
 export default function Footer() {
   return (
-    <footer className="bg-gray-200 text-black py-10">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="mb-8">
-          <h4 className="text-lg font-semibold mb-4">פרטי יצירת קשר</h4>
-          <p className="text-sm">
-            <strong>כתובת:</strong> רחוב סטודיוRS 123, תל אביב, ישראל
-          </p>
-          <p className="text-sm">
-            <strong>שעות פעילות:</strong> ימים א׳-ה׳: 09:00 - 18:00
-          </p>
-          <p className="text-sm">יום ו׳: 09:00 - 14:00 | שבת: סגור</p>
-        </div>
-
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 text-sm gap-4">
-          <SocialLinks />
-          <div>
-            &copy; {new Date().getFullYear()} סטודיוRS. כל הזכויות שמורות
+    <footer className="bg-gray-200 text-black">
+      <div className="container mx-auto py-10 px-4 flex items-start flex-wrap gap-14 lg:px-8">
+        <div className="flex flex-col gap-3">
+          <h2 className="text-lg font-semibold">{texts.media}</h2>
+          <div className="flex flex-col gap-2 text-sm">
+            {texts.socialLinks.map((link) => {
+              return (
+                <div className="flex items-center gap-1" key={link.name}>
+                  {iconsMap[link.name]}
+                  <Link
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-black"
+                  >
+                    {link.text}
+                  </Link>
+                </div>
+              )
+            })}
           </div>
         </div>
+        <div className="flex flex-col gap-3">
+          <h2 className="text-lg font-semibold">{texts.aboutUs.title}</h2>
+          <div className="flex items-center gap-1">
+            <h2 className="text-sm font-semibold">
+              {texts.aboutUs.address.title}
+            </h2>
+            <p className="text-sm">{texts.aboutUs.address.text}</p>
+          </div>
+          <div className="flex items-center gap-1">
+            <h2 className="text-sm font-semibold">
+              {texts.aboutUs.hours.title}
+            </h2>
+            <p className="text-sm">{texts.aboutUs.hours.text}</p>
+          </div>
+        </div>
+      </div>
+      <div className="py-2 bg-gray-100 text-xs text-center">
+        {texts.rights} {texts.name} &copy;
       </div>
     </footer>
   )
