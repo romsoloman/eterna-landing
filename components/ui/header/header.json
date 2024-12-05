@@ -1,10 +1,20 @@
 {
-  "navLinks": {
-    "about": "עלינו",
-    "services": "שירותים",
-    "contact": "צור קשר",
-    "products": "הכי נמכרים",
-    "benefits": "היתרונות שלנו",
-    "gallery": "גלריה"
-  }
+  "navLinks": [
+    {
+      "id": "about",
+      "label": "אודות"
+    },
+    {
+      "id": "benefits",
+      "label": "יתרונות"
+    },
+    {
+      "id": "contact",
+      "label": "צור קשר"
+    },
+    {
+      "id": "gallery",
+      "label": "גלריה"
+    }
+  ]
 }

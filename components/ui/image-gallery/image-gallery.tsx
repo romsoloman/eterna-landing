@@ -41,7 +41,7 @@ const CustomImageGallery = () => {
         showThumbnails={false}
         showPlayButton={false}
         showFullscreenButton={true}
-        autoPlay={true}
+        // autoPlay={true}
         showNav={false}
       />
     </motion.div>

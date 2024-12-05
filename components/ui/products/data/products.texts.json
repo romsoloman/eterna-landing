@@ -4,5 +4,12 @@
   "clarity": "בוררות",
   "size": "גודל",
   "cut": "עבודה",
-  "color": "צבע"
+  "color": "צבע",
+  "web": {
+    "url": "https://web.whatsapp.com/send/?phone=<CONTACT_PHONE>&text=<TEXT>"
+  },
+  "mobile": {
+    "url": "https://wa.me/<CONTACT_PHONE>?text=<TEXT>"
+  },
+  "text": "אני מעוניין במוצר הזה!"
 }

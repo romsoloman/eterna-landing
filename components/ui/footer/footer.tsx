@@ -19,7 +19,10 @@ export default function Footer() {
           <div className="flex flex-col gap-2 text-sm">
             {texts.socialLinks.map((link) => {
               return (
-                <div className="flex items-center gap-1" key={link.name}>
+                <div
+                  className="flex items-center gap-2 text-primary hover:text-black"
+                  key={link.name}
+                >
                   {iconsMap[link.name]}
                   <Link
                     href={link.url}

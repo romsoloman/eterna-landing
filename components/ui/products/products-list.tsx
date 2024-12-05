@@ -22,7 +22,7 @@ const ProductList = () => {
           {productTexts.title}
         </motion.h1>
         <motion.section
-          className="py-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="py-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-2 lg:justify-center lg:gap-12"
           variants={containerVariants}
         >
           {products.map((product) => (

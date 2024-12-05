@@ -37,56 +37,19 @@ const MobileMenu = ({ isMenuOpen, toggleMenu }: MobileMenuProps) => {
         isMenuOpen ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <Link
-        className="text-xl font-medium hover:text-black transition cursor-pointer"
-        duration={500}
-        offset={-70}
-        smooth={true}
-        to="about"
-        onClick={toggleMenu}
-      >
-        {texts.navLinks.about}
-      </Link>
-      <Link
-        className="text-xl font-medium hover:text-black transition cursor-pointer"
-        duration={500}
-        offset={-150}
-        smooth={true}
-        to="products"
-        onClick={toggleMenu}
-      >
-        {texts.navLinks.products}
-      </Link>
-      <Link
-        className="text-xl font-medium hover:text-black transition cursor-pointer"
-        duration={500}
-        offset={-150}
-        smooth={true}
-        to="benefits"
-        onClick={toggleMenu}
-      >
-        {texts.navLinks.benefits}
-      </Link>
-      <Link
-        className="text-xl font-medium hover:text-black transition cursor-pointer"
-        duration={500}
-        offset={-150}
-        smooth={true}
-        to="gallery"
-        onClick={toggleMenu}
-      >
-        {texts.navLinks.gallery}
-      </Link>
-      <Link
-        className="text-xl font-medium hover:text-black transition cursor-pointer"
-        duration={500}
-        offset={-150}
-        smooth={true}
-        to="footer"
-        onClick={toggleMenu}
-      >
-        {texts.navLinks.contact}
-      </Link>
+      {texts.navLinks.map((link) => (
+        <Link
+          key={link.id}
+          className="text-xl font-medium hover:text-black transition cursor-pointer"
+          duration={500}
+          offset={-150}
+          smooth={true}
+          to={link.id}
+          onClick={toggleMenu}
+        >
+          {link.label}
+        </Link>
+      ))}
     </div>
   )
 }

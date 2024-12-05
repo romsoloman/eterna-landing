@@ -5,6 +5,7 @@ import "../styles/globals.css"
 import { seoConfig } from "@/lib/seo/seo.config"
 import Header from "@/components/ui/header/header"
 import Footer from "@/components/ui/footer/footer"
+import Banner from "@/components/ui/banner/banner"
 
 const heebo = Heebo({
   subsets: ["hebrew", "latin"],
@@ -40,6 +41,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
+        <Banner />
         <Header />
         <main>{children}</main>
         <Footer />
