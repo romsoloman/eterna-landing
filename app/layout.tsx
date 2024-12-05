@@ -38,7 +38,7 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html className={heebo.className} dir="rtl" lang="he">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicons/favicon.ico" />
       </head>
       <body>
         <Banner />

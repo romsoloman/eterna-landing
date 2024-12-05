@@ -14,8 +14,8 @@
     "siteName": "Eterna"
   },
   "images": {
-    "default": "/images/eterna-logo.png",
-    "favicon": "/images/favicon.ico",
+    "default": "/favicons/web-app-manifest-192x192.png",
+    "favicon": "/favicons/favicon.ico",
     "alt": "Eterna - תכשיטים איכותיים בעיצוב אישי"
   }
 }
