@@ -34,12 +34,21 @@ body {
 }
 
 .image-gallery {
-  max-width: 1200px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
 .image-gallery-slide img {
   object-fit: cover;
+}
+
+video {
+  pointer-events: none; /* Prevent interactions with the video (including the play button) */
+}
+
+video::-internal-media-controls-overlay,
+video::-webkit-media-controls {
+  display: none !important;
 }
 
 /*
