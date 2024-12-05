@@ -12,7 +12,7 @@ const iconsMap: Record<string, ReactNode> = {
 }
 export default function Footer() {
   return (
-    <footer className="bg-gray-200 text-black">
+    <footer className="bg-gray-100 text-black" id="footer">
       <div className="container mx-auto py-10 px-4 flex items-start flex-wrap gap-14 lg:px-8">
         <div className="flex flex-col gap-3">
           <h2 className="text-lg font-semibold">{texts.media}</h2>
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="py-2 bg-gray-100 text-xs text-center">
+      <div className="py-2 bg-gray-200 text-xs text-center">
         {texts.rights} {texts.name} &copy;
       </div>
     </footer>

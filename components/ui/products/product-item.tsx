@@ -31,7 +31,7 @@ const ProductItem = ({
       alt={title}
       width={160}
       height={160}
-      className="w-full h-52 object-cover rounded-md mb-4"
+      className="w-full h-72 object-cover rounded-md mb-4"
     />
     <h3 className="text-lg mb-2 text-center sm:text-left">{title}</h3>
     <div className="flex flex-wrap items-center gap-4">
@@ -67,7 +67,7 @@ const ProductItem = ({
       )}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="block w-full sm:w-auto px-4 py-2 bg-primary text-white rounded text-center hover:bg-primaryDark"
+      className="block w-full sm:w-auto px-4 py-2 bg-primary text-white rounded text-center hover:bg-white hover:text-primary border-white border hover:border-primary transition-all"
     >
       {contactText}
     </Link>

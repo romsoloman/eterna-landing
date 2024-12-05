@@ -20,6 +20,7 @@ const CustomImageGallery = () => {
       whileInView="visible"
       viewport={{ once: true }}
       variants={galleryContainerVariants}
+      id="gallery"
     >
       <h2 className="text-center text-3xl mb-8">{texts.title}</h2>
       <ImageGallery
@@ -29,7 +30,7 @@ const CustomImageGallery = () => {
             <motion.img
               src={image.original}
               alt=""
-              className="rounded-md w-[400px] h-[400px] object-contain "
+              className="rounded-md w-full h-auto object-contain p-4"
               variants={imageVariants}
               initial="hidden"
               whileInView="visible"
