@@ -1,18 +1,14 @@
 import Link from "next/link"
 import texts from "./footer.json"
-import { InstagramIcon } from "@/components/icons/InstagramIcon"
 import { ReactNode } from "react"
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon"
-import { FacebookIcon } from "@/components/icons/FacebookIcon"
 
 const iconsMap: Record<string, ReactNode> = {
-  instagram: <InstagramIcon />,
-  facebook: <FacebookIcon />,
   whatsapp: <WhatsAppIcon />
 }
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 text-black" id="footer">
+    <footer className="bg-gray-100 text-black" id="contact">
       <div className="container mx-auto py-10 px-4 flex items-start flex-wrap gap-14 lg:px-8">
         <div className="flex flex-col gap-3">
           <h2 className="text-lg font-semibold">{texts.media}</h2>

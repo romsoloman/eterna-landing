@@ -11,5 +11,5 @@
   "mobile": {
     "url": "https://wa.me/<CONTACT_PHONE>?text=<TEXT>"
   },
-  "text": "אני מעוניין במוצר הזה!"
+  "text": "היי, אני מעוניין ב<PRODUCT_TITLE>. אוכל להתקשר?"
 }

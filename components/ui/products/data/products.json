@@ -20,5 +20,16 @@
       "size": "זמין לכל הגדלים"
     },
     "image": "/images/product2.webp"
+  },
+  {
+    "id": 3,
+    "title": "זוג עגילי מרטיני יהלומי מעבדה",
+    "description": {
+      "color": "D-F",
+      "clarity": "VVS",
+      "cut": "Excellent",
+      "size": "זמין לכל הגדלים"
+    },
+    "image": "/images/product3.webp"
   }
 ]
