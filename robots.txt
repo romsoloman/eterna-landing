@@ -1,0 +1,46 @@
+# Allow all search engines to index the main pages
+User-agent: *
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /login/
+Disallow: /register/
+Disallow: /api/
+Disallow: /404/
+Disallow: /server-error/
+
+# Prevent duplicate content from being indexed
+Disallow: /search/
+Disallow: /*?*sort=
+
+# Allow specific bots access to critical resources
+User-agent: Googlebot
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+User-agent: Bingbot
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Sitemap location
+Sitemap: https://eterna-jewlerys.com/sitemap.xml
+
+# Crawl delay to avoid server overload
+Crawl-delay: 10
+
+# Block certain crawlers (if needed for security or performance reasons)
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Protect private user data and ensure no sensitive data is indexed
+Disallow: /user/
+Disallow: /profile/
+Disallow: /account/
