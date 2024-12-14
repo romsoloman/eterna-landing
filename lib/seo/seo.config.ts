@@ -4,7 +4,7 @@ export const seoConfig = {
   defaultTitle: texts.title,
   defaultDescription: texts.description,
   defaultKeywords: texts.keywords,
-  siteUrl: "https://eterna-jewlery's.com",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
   openGraph: {
     ...texts.openGraph,
     images: [
