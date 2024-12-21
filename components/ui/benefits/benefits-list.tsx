@@ -16,7 +16,7 @@ const BenefitsList = () => {
   return (
     <motion.section
       id="benefits"
-      className="py-8 bg-gray-100"
+      className="px-6 py-8 bg-gray-100"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -24,7 +24,7 @@ const BenefitsList = () => {
     >
       <Container>
         <motion.h2
-          className="text-center text-3xl mb-6"
+          className="text-2xl mb-6 md:text-3xl"
           variants={titleVariants}
         >
           {benefitsTexts.title}

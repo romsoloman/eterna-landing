@@ -2,7 +2,7 @@
 
 export default function Hero() {
   return (
-    <div className="relative h-[50vh] w-full flex items-center justify-center overflow-hidden max-sm:h-[290px]">
+    <div className="relative h-[50vh] w-full flex items-center justify-center overflow-hidden max-sm:h-[375px]">
       <video
         autoPlay
         loop

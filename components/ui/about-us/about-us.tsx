@@ -11,17 +11,17 @@ const AboutUs = () => {
     <Container>
       <motion.div
         id="about"
-        className="px-8 my-10 flex flex-col gap-8 items-center justify-center"
+        className="px-8 my-10 flex flex-col gap-6 text-right"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={aboutContainerVariants}
       >
-        <motion.h1 className="text-3xl" variants={textVariants}>
+        <motion.h1 className="text-2xl md:text-3xl" variants={textVariants}>
           {texts.title}
         </motion.h1>
         <motion.div
-          className="text-center leading-[28px] text-gray-600 max-sm:text-sm"
+          className="leading-[28px] text-gray-600 max-sm:text-sm"
           variants={textVariants}
         >
           {texts.description}

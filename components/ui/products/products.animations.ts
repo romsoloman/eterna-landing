@@ -17,3 +17,8 @@ export const itemVariants = {
     transition: { duration: 0.6, ease: "easeOut" }
   }
 }
+
+export const buttonVariants = {
+  hover: { scale: 1.05 },
+  tap: { scale: 0.95 }
+}

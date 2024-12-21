@@ -51,6 +51,10 @@ video::-webkit-media-controls {
   display: none !important;
 }
 
+.swiper-pagination {
+  display: none;
+}
+
 /*
 
 html,
