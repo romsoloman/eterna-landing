@@ -6,10 +6,9 @@
   "cut": "עבודה",
   "color": "צבע",
   "web": {
-    "url": "https://web.whatsapp.com/send/?phone=<CONTACT_PHONE>&text=<TEXT>"
+    "url": "https://web.whatsapp.com/send/?phone=<CONTACT_PHONE>&text=היי אני מעוניין במוצרים שלך, נוכל לדבר על זה?"
   },
   "mobile": {
-    "url": "https://wa.me/<CONTACT_PHONE>?text=<TEXT>"
-  },
-  "text": "היי, אני מעוניין ב<PRODUCT_TITLE>. אוכל להתקשר?"
+    "url": "https://wa.me/<CONTACT_PHONE>?text=<היי אני מעוניין במוצרים שלך, נוכל לדבר על זה?"
+  }
 }

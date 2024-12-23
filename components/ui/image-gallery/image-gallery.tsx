@@ -30,7 +30,7 @@ const CustomImageGallery = () => {
             <motion.img
               src={image.original}
               alt=""
-              className="rounded-md w-full h-auto object-contain p-4"
+              className="w-full h-auto object-contain "
               variants={imageVariants}
               initial="hidden"
               whileInView="visible"

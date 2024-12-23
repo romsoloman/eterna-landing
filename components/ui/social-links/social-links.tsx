@@ -16,7 +16,7 @@ const SocialLinks = () => {
   const links = isMobile ? texts.links.mobile : texts.links.web
 
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex items-center gap-3 lg:min-w-[150px] lg:justify-end">
       {links.map((link) => {
         const IconComponent = icons[link.icon as keyof typeof icons]
         const url = link.url

@@ -8,7 +8,7 @@
       "cut": "Excellent",
       "size": "זמין לכל הגדלים"
     },
-    "image": "/images/product1.webp"
+    "src": "/videos/product1.MP4"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
       "cut": "Excellent",
       "size": "זמין לכל הגדלים"
     },
-    "image": "/images/product2.webp"
+    "src": "/videos/product2.MP4"
   },
   {
     "id": 3,
@@ -30,6 +30,6 @@
       "cut": "Excellent",
       "size": "זמין לכל הגדלים"
     },
-    "image": "/images/product3.webp"
+    "src": "/videos/product3.MP4"
   }
 ]

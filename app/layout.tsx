@@ -6,6 +6,7 @@ import { seoConfig } from "@/lib/seo/seo.config"
 import Header from "@/components/ui/header/header"
 import Footer from "@/components/ui/footer/footer"
 import Banner from "@/components/ui/banner/banner"
+import { GoogleAnalytics } from "@next/third-parties/google"
 
 const heebo = Heebo({
   subsets: ["hebrew", "latin"],
@@ -46,6 +47,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <main>{children}</main>
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-40LSDR70P0" />
     </html>
   )
 }

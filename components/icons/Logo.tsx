@@ -6,7 +6,7 @@ const Logo = () => {
       <Image
         src="/images/logo.png"
         alt="Company Logo"
-        width={190} // Set the desired width
+        width={120} // Set the desired width
         height={60} // Set the desired height
         priority // Optional: Preloads the image for better performance
       />
