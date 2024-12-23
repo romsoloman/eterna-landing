@@ -2,7 +2,6 @@
 
 import React from "react"
 import { motion } from "framer-motion"
-import { Swiper, SwiperSlide } from "swiper/react" // Swiper components
 import "swiper/css" // Core Swiper CSS
 import "swiper/css/pagination" // Pagination module CSS
 import productTexts from "./data/products.texts.json"
@@ -14,9 +13,10 @@ import {
   containerVariants,
   itemVariants
 } from "./products.animations"
-import { Pagination, A11y } from "swiper/modules"
 import Link from "next/link"
 import { CONTACT_PHONE } from "../social-links/social-links.consts"
+
+const MAX_PRODUCTS = 3
 
 const ProductList = () => {
   return (
@@ -35,31 +35,26 @@ const ProductList = () => {
         >
           {productTexts.title}
         </motion.h1>
-        <Swiper
-          spaceBetween={10} // Adjust spacing to show part of the 3rd item
-          slidesPerView={2.2} // Show 2 full items and part of the 3rd item
-          breakpoints={{
-            640: { slidesPerView: 2.2, spaceBetween: 10 }, // For screens >= 640px
-            1024: { slidesPerView: 2.7, spaceBetween: 30 } // For screens >= 1024px
-          }}
-          pagination={{ clickable: true }}
-          modules={[Pagination, A11y]}
-          className="mb-6"
-        >
-          {products.map((product) => (
-            <SwiperSlide key={product.id}>
-              <motion.div variants={itemVariants}>
-                <ProductItem
-                  id={product.id}
-                  title={product.title}
-                  description={product.description}
-                  src={product.src}
-                  contactText={productTexts.contactUs}
-                />
-              </motion.div>
-            </SwiperSlide>
+
+        {/* Product Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 gap-2">
+          {products.slice(0, MAX_PRODUCTS).map((product) => (
+            <motion.div
+              variants={itemVariants}
+              key={product.id}
+              className="flex flex-col items-center"
+            >
+              <ProductItem
+                id={product.id}
+                title={product.title}
+                description={product.description}
+                src={product.src}
+                contactText={productTexts.contactUs}
+              />
+            </motion.div>
           ))}
-        </Swiper>
+        </div>
+
         <div className="flex items-center justify-center md:justify-start">
           <Link
             href={`https://wa.me/${CONTACT_PHONE}?text=היי אני מעוניין במוצרים שלך, נוכל לדבר על זה?`}

@@ -3,13 +3,14 @@
 import React from "react"
 import Head from "next/head"
 import { seoConfig } from "@/lib/seo/seo.config"
+import Link from "next/link"
 
-interface ProductItemProps {
-  id: number
+export interface ProductItemProps {
+  id: string
   title: string
   description: {
-    color: string
-    size: string
+    colors: { name: string; color: string }[] // Array for colors with price
+    sizes: { label: string; priceRange: string }[] // Array for sizes with price ranges
     cut: string
     clarity: string
   }
@@ -24,7 +25,7 @@ const ProductItem = ({ id, title, description, src }: ProductItemProps) => {
         <meta property="og:title" content={title} />
         <meta
           property="og:description"
-          content={`צבע: ${description.color}, בוררות: ${description.clarity}, עבודה: ${description.cut}`}
+          content={`צבע: ${description.colors[0]}, בוררות: ${description.clarity}, עבודה: ${description.cut}`}
         />
         <meta property="og:image" content={src} />
         <meta
@@ -33,24 +34,26 @@ const ProductItem = ({ id, title, description, src }: ProductItemProps) => {
         />
         <meta property="og:type" content="item" />
       </Head>
-      <div
-        className="rounded-md flex flex-col  sm:items-start"
-        id={`products-product${id}`}
-      >
-        <div className="h-[250px] w-full rounded-md flex items-center mb-4">
-          <video
-            src={src}
-            controls
-            className="w-full h-[250px] object-cover rounded-md"
-            autoPlay
-            muted
-            loop
-          />
+      <Link href={`/product/${id}`} passHref>
+        <div
+          className="rounded-md flex flex-col  sm:items-start"
+          id={`products-product${id}`}
+        >
+          <div className="h-[120px] w-full rounded-md flex items-center mb-4">
+            <video
+              src={src}
+              controls
+              className="w-full h-[120px] object-cover rounded-md"
+              autoPlay
+              muted
+              loop
+            />
+          </div>
+          <h3 className="text-lg mb-2 text-center sm:text-left max-sm:text-sm max-sm:text-right">
+            {title}
+          </h3>
         </div>
-        <h3 className="text-lg mb-2 text-center sm:text-left max-sm:text-sm max-sm:text-right">
-          {title}
-        </h3>
-      </div>
+      </Link>
     </>
   )
 }
