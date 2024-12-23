@@ -49,7 +49,6 @@ const ProductList = () => {
                 title={product.title}
                 description={product.description}
                 src={product.src}
-                contactText={productTexts.contactUs}
               />
             </motion.div>
           ))}

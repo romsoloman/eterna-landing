@@ -15,7 +15,6 @@ export interface ProductItemProps {
     clarity: string
   }
   src: string
-  contactText: string
 }
 
 const ProductItem = ({ id, title, description, src }: ProductItemProps) => {
