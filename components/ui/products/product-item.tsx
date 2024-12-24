@@ -42,12 +42,14 @@ const ProductItem = ({ id, title, description, src }: ProductItemProps) => {
           <div className="h-[120px] w-full rounded-md flex items-center mb-4">
             <video
               src={src}
-              controls
+              controls={false}
               className="w-full h-[120px] object-cover rounded-md"
               autoPlay
               loop
               muted
               playsInline
+              disablePictureInPicture
+              onClick={(e) => e.stopPropagation()}
             />
           </div>
           <h3 className="text-lg mb-2 text-center sm:text-left max-sm:text-sm max-sm:text-right">
