@@ -10,7 +10,7 @@ import { CONTACT_PHONE } from "../../social-links/social-links.consts"
 import productTexts from "../data/products.texts.json"
 
 const formatPrice = (price: number) => {
-  return `${price.toLocaleString()} ILS`
+  return `${price.toLocaleString()} ₪`
 }
 
 type Props = {
