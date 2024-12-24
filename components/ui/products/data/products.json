@@ -9,17 +9,25 @@
       "sizes": [
         {
           "label": "10ct",
-          "priceRange": "40000-25000.0 ILS"
+          "price": {
+            "real": 40000,
+            "laboratory": 25000
+          }
         }
       ],
-      "colors": [
+      "shapes": ["עגול"],
+      "goldTypes": [
         {
           "name": "זהב צהוב",
           "color": "#FFD700"
         },
         {
           "name": "זהב לבן",
-          "color": "#ecd29e"
+          "color": "#ECD29E"
+        },
+        {
+          "name": "זהב אדום",
+          "color": "#FF4500"
         }
       ]
     },
@@ -27,7 +35,7 @@
   },
   {
     "id": "56a1aff0-9861-4d0d-9991-e1eea9e02694",
-    "title": "שרשרת טיפאני 0.3CT",
+    "title": "שרשרת טיפאני",
     "description": {
       "color": "D-F",
       "clarity": "VVS",
@@ -35,7 +43,59 @@
       "sizes": [
         {
           "label": "0.3ct",
-          "priceRange": "3500-1600.0 ILS"
+          "price": {
+            "real": 3500,
+            "laboratory": 1600
+          }
+        },
+        {
+          "label": "0.4ct",
+          "price": {
+            "real": 4400,
+            "laboratory": 1850.0
+          }
+        },
+        {
+          "label": "0.5ct",
+          "price": {
+            "real": 5500,
+            "laboratory": 2400.0
+          }
+        },
+        {
+          "label": "0.75ct",
+          "price": {
+            "real": 7400,
+            "laboratory": 2800.0
+          }
+        },
+        {
+          "label": "1ct",
+          "price": {
+            "real": 11400,
+            "laboratory": 3200.0
+          }
+        },
+        {
+          "label": "1.25ct",
+          "price": {
+            "real": 14500,
+            "laboratory": 3400.0
+          }
+        },
+        {
+          "label": "1.5ct",
+          "price": {
+            "real": 20000,
+            "laboratory": 3800.0
+          }
+        },
+        {
+          "label": "2ct",
+          "price": {
+            "real": 35000,
+            "laboratory": 4900.0
+          }
         }
       ],
       "colors": [
@@ -46,196 +106,33 @@
         {
           "name": "זהב לבן",
           "color": "#ecd29e"
+        },
+        {
+          "name": "זהב אדום",
+          "color": "#FF4500"
+        }
+      ],
+      "shapes": ["עגול", "אובל", "לב", "טיפה", "מרקיזה"],
+      "goldTypes": [
+        {
+          "name": "זהב צהוב",
+          "color": "#FFD700"
+        },
+        {
+          "name": "זהב לבן",
+          "color": "#ECD29E"
+        },
+        {
+          "name": "זהב אדום",
+          "color": "#FF4500"
         }
       ]
     },
     "src": "/videos/product2.MP4"
   },
   {
-    "id": "8e680227-0e5d-4f59-916e-6d40b338cb82",
-    "title": "שרשרת טיפאני 0.4CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
-        {
-          "label": "0.4ct",
-          "priceRange": "4400-1850.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
-        },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product3.MP4"
-  },
-  {
-    "id": "a2501cd5-8ce5-4111-bd5a-5ce54e8bd536",
-    "title": "שרשרת טיפאני 0.5CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
-        {
-          "label": "0.5ct",
-          "priceRange": "5500-2400.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
-        },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product4.MP4"
-  },
-  {
-    "id": "2e1e2666-62b8-49da-b371-29fadbafdf23",
-    "title": "שרשרת טיפאני 0.75CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
-        {
-          "label": "0.75ct",
-          "priceRange": "7400-2800.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
-        },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product5.MP4"
-  },
-  {
-    "id": "3507b1eb-8eb0-4ba1-a907-87bff63f95b6",
-    "title": "שרשרת טיפאני 1.00CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
-        {
-          "label": "1ct",
-          "priceRange": "11400-3200.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
-        },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product6.MP4"
-  },
-  {
-    "id": "51bdf709-ec19-428d-a461-22f79597a49e",
-    "title": "שרשרת טיפאני 1.25CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
-        {
-          "label": "1.25ct",
-          "priceRange": "14500-3400.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
-        },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product7.MP4"
-  },
-  {
-    "id": "84c2f1bb-7896-4d83-85c8-f33eb8bf22ad",
-    "title": "שרשרת טיפאני 1.50CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
-        {
-          "label": "1.5ct",
-          "priceRange": "20000-3800.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
-        },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product8.MP4"
-  },
-  {
-    "id": "619e6ef0-207c-4d21-b4a1-08f9cb817aa8",
-    "title": "שרשרת טיפאני 2CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
-        {
-          "label": "2ct",
-          "priceRange": "35000-4900.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
-        },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product9.MP4"
-  },
-  {
-    "id": "f5ba0949-ec1a-44c5-a93c-316345f760f4",
-    "title": "עגילי מרטיני 0.4 CT (0.8ct Total)",
+    "id": "new-earrings-001",
+    "title": "עגילי מרטיני",
     "description": {
       "color": "D-F",
       "clarity": "VVS",
@@ -243,155 +140,68 @@
       "sizes": [
         {
           "label": "0.8ct (0.4 each)",
-          "priceRange": "6200-2400.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 6200,
+            "laboratory": 2400
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product10.MP4"
-  },
-  {
-    "id": "008640e1-1944-4ff7-969e-1ddb18d0bf93",
-    "title": "עגילי מרטיני 0.5 CT (1ct Total) ",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "1ct (0.5 each)",
-          "priceRange": "8200-2700.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 8200,
+            "laboratory": 2700
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product11.MP4"
-  },
-  {
-    "id": "d3e5336d-18af-4035-8888-780cdc910073",
-    "title": "עגילי מרטיני 0.75 CT (1.5ct Total)",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "1.5ct (0.75 each)",
-          "priceRange": "14000-3000.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 14000,
+            "laboratory": 3000
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product12.MP4"
-  },
-  {
-    "id": "e71ae387-9f96-424e-b329-3a501c8f9af2",
-    "title": "עגילי מרטיני 1 CT (2ct Total)",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "2ct (1 each)",
-          "priceRange": "22000-3400.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 22000,
+            "laboratory": 3400
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product13.MP4"
-  },
-  {
-    "id": "6e55e38a-6ea6-4b7e-90f0-8dfd721707b2",
-    "title": "עגילי מרטיני 1.5 CT (3ct Total)",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "3ct (1.5 each)",
-          "priceRange": "48000-4600.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 48000,
+            "laboratory": 4600
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product14.MP4"
-  },
-  {
-    "id": "6d29524d-6684-4466-97ff-2185e081d523",
-    "title": "עגילי מרטיני 2 CT (4ct Total)",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "4ct (2 each)",
-          "priceRange": "75000-5400.0 ILS"
+          "price": {
+            "real": 75000,
+            "laboratory": 5400
+          }
         }
       ],
-      "colors": [
+      "shapes": ["עגול"],
+      "goldTypes": [
         {
           "name": "זהב צהוב",
           "color": "#FFD700"
         },
         {
           "name": "זהב לבן",
-          "color": "#ecd29e"
+          "color": "#ECD29E"
+        },
+        {
+          "name": "זהב אדום",
+          "color": "#FF4500"
         }
       ]
     },
-    "src": "/videos/product15.MP4"
+    "src": "/videos/product3.MP4"
   },
   {
-    "id": "fc936fa4-8497-44fa-a14e-2668103b1f85",
-    "title": "טבעת סוליטר אבן מרכזית 0.3CT",
+    "id": "56a1aff0-9861-4d0d-9991-euojsa9e02694",
+    "title": "טבעת סוליטר אבן מרכזית",
     "description": {
       "color": "D-F",
       "clarity": "VVS",
@@ -399,306 +209,100 @@
       "sizes": [
         {
           "label": "0.3ct",
-          "priceRange": "3800-nan ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 3800
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product16.MP4"
-  },
-  {
-    "id": "61e40644-f09e-4848-b6d8-02e30167142b",
-    "title": "טבעת סוליטר אבן מרכזית 0.5CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "0.5ct",
-          "priceRange": "5600-nan ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 5600
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product17.MP4"
-  },
-  {
-    "id": "1f2d8d0e-6f81-4f4c-81c3-e646d4b2897c",
-    "title": "טבעת סוליטר אבן מרכזית 0.7CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "0.7ct",
-          "priceRange": "8400-nan ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 8400
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product18.MP4"
-  },
-  {
-    "id": "6856f1e1-8beb-493b-bd48-ebb8dabf13ba",
-    "title": "טבעת סוליטר אבן מרכזית 0.8CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "0.8ct",
-          "priceRange": "9800-nan ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 9800
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product19.MP4"
-  },
-  {
-    "id": "c66299a6-7c59-4ce7-8815-8c288fcd4a22",
-    "title": "טבעת סוליטר אבן מרכזית 0.9CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "0.9ct",
-          "priceRange": "10400-nan ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 10400
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product20.MP4"
-  },
-  {
-    "id": "84f6eac8-00a4-4d56-8cd3-2db8938f185a",
-    "title": "טבעת סוליטר אבן מרכזית 1CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "1ct",
-          "priceRange": "12500-2950.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 12500,
+            "laboratory": 2950
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product21.MP4"
-  },
-  {
-    "id": "31a7ec8b-ea44-46dc-a82a-672e393dfffe",
-    "title": "טבעת סוליטר אבן מרכזית 1.25CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "1.25ct",
-          "priceRange": "17000-3300.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 17000,
+            "laboratory": 3300
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product22.MP4"
-  },
-  {
-    "id": "cb9006ce-5528-4726-82d3-dd93751b923e",
-    "title": "טבעת סוליטר אבן מרכזית 1.5CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "1.5ct",
-          "priceRange": "22000-3800.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 22000,
+            "laboratory": 3800
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product23.MP4"
-  },
-  {
-    "id": "7cc06f5a-3de9-41a0-877e-652166d9755f",
-    "title": "טבעת סוליטר אבן מרכזית 1.75CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "1.75ct",
-          "priceRange": "27000-4200.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 27000,
+            "laboratory": 4200
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product24.MP4"
-  },
-  {
-    "id": "110c3bbe-6db1-436f-b9b0-516842524a12",
-    "title": "טבעת סוליטר אבן מרכזית 2CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "2ct",
-          "priceRange": "38500-4800.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 38500,
+            "laboratory": 4800
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product25.MP4"
-  },
-  {
-    "id": "183cce92-6369-4534-b113-c6f83decf369",
-    "title": "טבעת סוליטר אבן מרכזית 2.5CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "2.5ct",
-          "priceRange": "52000-5500.0 ILS"
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#FFD700"
+          "price": {
+            "real": 52000,
+            "laboratory": 5500
+          }
         },
-        {
-          "name": "זהב לבן",
-          "color": "#ecd29e"
-        }
-      ]
-    },
-    "src": "/videos/product26.MP4"
-  },
-  {
-    "id": "03714798-f20c-4e91-9f9b-8aa194ce21c1",
-    "title": "טבעת סוליטר אבן מרכזית 3CT",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
         {
           "label": "3ct",
-          "priceRange": "70000-8000.0 ILS"
+          "price": {
+            "real": 70000,
+            "laboratory": 8000
+          }
         }
       ],
-      "colors": [
+      "shapes": ["עגול", "רדיאן", "אובל", "לב", "טיפה", "מרקיזה", "אמרלד"],
+      "goldTypes": [
         {
           "name": "זהב צהוב",
           "color": "#FFD700"
         },
         {
           "name": "זהב לבן",
-          "color": "#ecd29e"
+          "color": "#ECD29E"
+        },
+        {
+          "name": "זהב אדום",
+          "color": "#FF4500"
         }
       ]
     },
-    "src": "/videos/product27.MP4"
+    "src": "/videos/product4.MP4"
   }
 ]

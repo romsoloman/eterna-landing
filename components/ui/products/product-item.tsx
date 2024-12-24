@@ -9,10 +9,11 @@ export interface ProductItemProps {
   id: string
   title: string
   description: {
-    colors: { name: string; color: string }[] // Array for colors with price
-    sizes: { label: string; priceRange: string }[] // Array for sizes with price ranges
+    sizes: { label: string; price: { real: number; laboratory?: number } }[] // Array for sizes with real and optional laboratory prices
     cut: string
     clarity: string
+    shapes: string[] // Array for available shapes
+    goldTypes: { name: string; color: string }[] // Array for gold types with names and hex colors
   }
   src: string
 }
@@ -24,7 +25,7 @@ const ProductItem = ({ id, title, description, src }: ProductItemProps) => {
         <meta property="og:title" content={title} />
         <meta
           property="og:description"
-          content={`צבע: ${description.colors[0]}, בוררות: ${description.clarity}, עבודה: ${description.cut}`}
+          content={`צבע: ${description.goldTypes}, בוררות: ${description.clarity}, עבודה: ${description.cut}`}
         />
         <meta property="og:image" content={src} />
         <meta
@@ -33,7 +34,7 @@ const ProductItem = ({ id, title, description, src }: ProductItemProps) => {
         />
         <meta property="og:type" content="item" />
       </Head>
-      <Link href={`/product/${id}`} passHref>
+      <Link href={`/product/${id}`} passHref className="w-full">
         <div
           className="rounded-md flex flex-col  sm:items-start"
           id={`products-product${id}`}
@@ -44,8 +45,9 @@ const ProductItem = ({ id, title, description, src }: ProductItemProps) => {
               controls
               className="w-full h-[120px] object-cover rounded-md"
               autoPlay
-              muted
               loop
+              muted
+              playsInline
             />
           </div>
           <h3 className="text-lg mb-2 text-center sm:text-left max-sm:text-sm max-sm:text-right">

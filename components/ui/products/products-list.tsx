@@ -16,7 +16,7 @@ import {
 import Link from "next/link"
 import { CONTACT_PHONE } from "../social-links/social-links.consts"
 
-const MAX_PRODUCTS = 3
+const MAX_PRODUCTS = 4
 
 const ProductList = () => {
   return (
@@ -37,7 +37,7 @@ const ProductList = () => {
         </motion.h1>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 gap-2">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
           {products.slice(0, MAX_PRODUCTS).map((product) => (
             <motion.div
               variants={itemVariants}
@@ -47,8 +47,8 @@ const ProductList = () => {
               <ProductItem
                 id={product.id}
                 title={product.title}
-                description={product.description}
                 src={product.src}
+                description={product.description}
               />
             </motion.div>
           ))}

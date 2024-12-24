@@ -1,8 +1,9 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const Logo = () => {
   return (
-    <div>
+    <Link href={"/"} passHref>
       <Image
         src="/images/logo.png"
         alt="Company Logo"
@@ -10,7 +11,7 @@ const Logo = () => {
         height={60} // Set the desired height
         priority // Optional: Preloads the image for better performance
       />
-    </div>
+    </Link>
   )
 }
 

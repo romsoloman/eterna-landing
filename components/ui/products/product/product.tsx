@@ -9,8 +9,8 @@ import { buttonVariants } from "../products.animations"
 import { CONTACT_PHONE } from "../../social-links/social-links.consts"
 import productTexts from "../data/products.texts.json"
 
-const formatPrice = (price: string) => {
-  return `${parseInt(price, 10).toLocaleString()} ILS`
+const formatPrice = (price: number) => {
+  return `${price.toLocaleString()} ILS`
 }
 
 type Props = {
@@ -33,7 +33,7 @@ const ProductPage = ({ product }: Props) => {
       </Head>
 
       {/* Page Layout */}
-      <div className="container">
+      <div className="container mx-auto max-w-screen-md md:py-8">
         {/* Video Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -44,10 +44,10 @@ const ProductPage = ({ product }: Props) => {
           <div className="w-full h-[360px] overflow-hidden shadow-lg">
             <video
               src={product.src}
-              controls
               autoPlay
-              muted
               loop
+              muted
+              playsInline
               className="w-full h-full object-cover"
             />
           </div>
@@ -65,26 +65,22 @@ const ProductPage = ({ product }: Props) => {
             {product.title}
           </h1>
 
-          {/* Price Section */}
-          <p className="text-sm mb-2">
-            מחיר:{" "}
-            {formatPrice(product.description.sizes[0].priceRange.split("-")[0])}{" "}
-            -{" "}
-            {formatPrice(product.description.sizes[0].priceRange.split("-")[1])}
-          </p>
-
           <div className="h-[2px] bg-gray-200 rounded-lg mb-4" />
 
           {/* Sizes and Prices */}
           <h2 className="text-base font-semibold mb-2 ">גדלים ומחירים:</h2>
           <ul className="list-none ml-6 mb-4">
             {product.description.sizes.map((size, index) => (
-              <li key={index} className="text-gray-700 text-sm">
-                <span className="font-bold ">{size.label}:</span>{" "}
-                {size.priceRange
-                  .split("-")
-                  .map((price) => formatPrice(price.trim()))
-                  .join(" ")}
+              <li key={index} className="text-gray-700 text-sm mb-2">
+                <div className="flex items-center gap-2">
+                  <span className="font-bold">{size.label}:</span>
+                  <span>{formatPrice(size.price.real)}</span>
+                  {size.price.laboratory && (
+                    <span className="text-gray-500">
+                      (מעבדה: {formatPrice(size.price.laboratory)})
+                    </span>
+                  )}
+                </div>
               </li>
             ))}
           </ul>
@@ -94,19 +90,21 @@ const ProductPage = ({ product }: Props) => {
           {/* Grouped Details */}
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <h2 className="text-sm font-semibold mb-2 ">ניקיון:</h2>
-              <p className="text-gray-700 mb-4">
+              <h2 className="font-semibold mb-2 ">ניקיון:</h2>
+              <p className="text-gray-700 mb-4 text-sm">
                 {product.description.clarity}
               </p>
             </div>
             <div>
-              <h2 className="text-sm font-semibold mb-2 ">עבודה:</h2>
-              <p className="text-gray-700 mb-4">{product.description.cut}</p>
+              <h2 className="font-semibold mb-2 ">עבודה:</h2>
+              <p className="text-gray-700 mb-4 text-sm">
+                {product.description.cut}
+              </p>
             </div>
             <div>
-              <h2 className="text-sm font-semibold mb-2 ">צבעים:</h2>
-              <ul className="list-none ml-6 mb-2">
-                {product.description.colors.map((color, index) => (
+              <h2 className="font-semibold mb-2 ">צבעים:</h2>
+              <ul className="list-none ml-6 mb-2 text-sm">
+                {product.description.goldTypes.map((color, index) => (
                   <li key={index} className="text-gray-700 flex items-center">
                     <span
                       className="w-4 h-4 rounded-full ml-2 border border-gray-300"
