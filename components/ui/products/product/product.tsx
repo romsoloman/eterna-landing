@@ -1,13 +1,14 @@
 "use client"
 
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Head from "next/head"
 import { motion } from "framer-motion"
-import { ProductItemProps } from "../product-item"
 import Link from "next/link"
+import { ProductItemProps } from "../product-item"
 import { buttonVariants } from "../products.animations"
 import { CONTACT_PHONE } from "../../social-links/social-links.consts"
 import productTexts from "../data/products.texts.json"
+import { event } from "@/gtag"
 
 const formatPrice = (price: number) => {
   return `${price.toLocaleString()} ₪`
@@ -18,6 +19,40 @@ type Props = {
 }
 
 const ProductPage = ({ product }: Props) => {
+  const [selectedSize, setSelectedSize] = useState(product.description.sizes[0])
+
+  useEffect(() => {
+    event({
+      action: "view_product",
+      category: "Product",
+      label: product.title
+    })
+  }, [product.title])
+
+  const handleSizeChange = (_e: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedLabel = _e.target.value
+    const size = product.description.sizes.find(
+      (s) => s.label === selectedLabel
+    )
+    if (size) {
+      setSelectedSize(size)
+      event({
+        action: "select_size",
+        category: "Product",
+        label: `${product.title} - Size ${selectedLabel}`,
+        value: parseFloat(selectedLabel)
+      })
+    }
+  }
+
+  const handleContactClick = () => {
+    event({
+      action: "contact",
+      category: "Product",
+      label: product.title
+    })
+  }
+
   return (
     <>
       {/* SEO Meta Tags */}
@@ -67,23 +102,41 @@ const ProductPage = ({ product }: Props) => {
 
           <div className="h-[2px] bg-gray-200 rounded-lg mb-4" />
 
-          {/* Sizes and Prices */}
-          <h2 className="text-base font-semibold mb-2 ">גדלים ומחירים:</h2>
-          <ul className="list-none ml-6 mb-4">
-            {product.description.sizes.map((size, index) => (
-              <li key={index} className="text-gray-700 text-sm mb-2">
-                <div className="flex items-center gap-2">
-                  <span className="font-bold">{size.label}:</span>
-                  <span>{formatPrice(size.price.real)}</span>
-                  {size.price.laboratory && (
-                    <span className="text-gray-500">
-                      (מעבדה: {formatPrice(size.price.laboratory)})
-                    </span>
-                  )}
-                </div>
-              </li>
+          {/* Dropdown for Sizes */}
+          <h2 className="text-base font-semibold mb-4 ">בחר גודל :</h2>
+          <select
+            className="block w-1/4 border border-gray-400 rounded-lg bg-gray-50 p-3 text-gray-800 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition duration-200 mb-4"
+            onChange={handleSizeChange}
+            value={selectedSize.label}
+          >
+            {product.description.sizes.map((size) => (
+              <option key={size.label} value={size.label}>
+                {size.label}
+              </option>
             ))}
-          </ul>
+          </select>
+
+          {/* Display Selected Price */}
+          {product.title === "שרשרת טניס" ? (
+            <p className="text-gray-700 mb-4 font-semibold">למחיר צרו קשר</p>
+          ) : (
+            <>
+              <p className="text-gray-700 mb-4">
+                <span className="font-semibold">יהלום טבעי: </span>
+                {formatPrice(selectedSize.price.real)}
+                {selectedSize.price.laboratory && (
+                  <>
+                    <br />
+                    <span className="font-semibold">יהלום מעבדה: </span>
+                    {formatPrice(selectedSize.price.laboratory)}
+                  </>
+                )}
+              </p>
+              <p className="text-xs text-gray-500">
+                * למידות מעל 3 קרט, אנא צור קשר לקבלת מחיר
+              </p>
+            </>
+          )}
 
           <div className="h-[2px] bg-gray-200 rounded-lg mb-4" />
 
@@ -93,6 +146,12 @@ const ProductPage = ({ product }: Props) => {
               <h2 className="font-semibold mb-2 ">ניקיון:</h2>
               <p className="text-gray-700 mb-4 text-sm">
                 {product.description.clarity}
+              </p>
+            </div>
+            <div>
+              <h2 className="font-semibold mb-2 ">צבע:</h2>
+              <p className="text-gray-700 mb-4 text-sm">
+                {product.description.color}
               </p>
             </div>
             <div>
@@ -127,6 +186,7 @@ const ProductPage = ({ product }: Props) => {
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center"
+            onClick={handleContactClick}
           >
             <motion.button
               variants={buttonVariants}

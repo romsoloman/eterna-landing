@@ -4,6 +4,7 @@ import React from "react"
 import Head from "next/head"
 import { seoConfig } from "@/lib/seo/seo.config"
 import Link from "next/link"
+import { event } from "@/gtag"
 
 export interface ProductItemProps {
   id: string
@@ -14,18 +15,28 @@ export interface ProductItemProps {
     clarity: string
     shapes: string[] // Array for available shapes
     goldTypes: { name: string; color: string }[] // Array for gold types with names and hex colors
+    color: string
   }
   src: string
 }
 
 const ProductItem = ({ id, title, description, src }: ProductItemProps) => {
+  const handleProductClick = () => {
+    event({
+      action: "click_product",
+      category: "Product",
+      label: title,
+      value: +id
+    })
+  }
+
   return (
     <>
       <Head>
         <meta property="og:title" content={title} />
         <meta
           property="og:description"
-          content={`צבע: ${description.goldTypes}, בוררות: ${description.clarity}, עבודה: ${description.cut}`}
+          content={`צבע: ${description.color}, ניקיון: ${description.clarity}, עבודה: ${description.cut}`}
         />
         <meta property="og:image" content={src} />
         <meta
@@ -36,8 +47,9 @@ const ProductItem = ({ id, title, description, src }: ProductItemProps) => {
       </Head>
       <Link href={`/product/${id}`} passHref className="w-full">
         <div
-          className="rounded-md flex flex-col  sm:items-start"
+          className="rounded-md flex flex-col sm:items-start"
           id={`products-product${id}`}
+          onClick={handleProductClick} // Track click event
         >
           <div className="h-[120px] w-full rounded-md flex items-center mb-4">
             <video
@@ -49,7 +61,7 @@ const ProductItem = ({ id, title, description, src }: ProductItemProps) => {
               muted
               playsInline
               disablePictureInPicture
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e) => e.stopPropagation()} // Prevent video click propagation
             />
           </div>
           <h3 className="text-lg mb-2 text-center sm:text-left max-sm:text-sm max-sm:text-right">
