@@ -11,13 +11,13 @@ export interface ProductItemProps {
   title: string
   description: {
     sizes: { label: string; price: { real: number; laboratory?: number } }[] // Array for sizes with real and optional laboratory prices
-    cut: string
-    clarity: string
+    cut: string // Cut information (fixed as "Excellent")
+    clarity: { real: string; laboratory: string } // Clarity for both real and laboratory diamonds
     shapes: string[] // Array for available shapes
     goldTypes: { name: string; color: string }[] // Array for gold types with names and hex colors
-    color: string
+    color: { real: string; laboratory: string } // Color for both real and laboratory diamonds
   }
-  src: string
+  src: string // Video source
 }
 
 const ProductItem = ({ id, title, description, src }: ProductItemProps) => {

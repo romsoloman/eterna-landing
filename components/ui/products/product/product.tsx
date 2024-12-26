@@ -105,7 +105,7 @@ const ProductPage = ({ product }: Props) => {
           {/* Dropdown for Sizes */}
           <h2 className="text-base font-semibold mb-4 ">בחר גודל :</h2>
           <select
-            className="block w-1/4 border border-gray-400 rounded-lg bg-gray-50 p-3 text-gray-800 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition duration-200 mb-4"
+            className="block w-[40%] border border-gray-400 rounded-lg bg-gray-50 p-2 text-gray-800 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition duration-200 mb-4 text-base"
             onChange={handleSizeChange}
             value={selectedSize.label}
           >
@@ -133,7 +133,7 @@ const ProductPage = ({ product }: Props) => {
                 )}
               </p>
               <p className="text-xs text-gray-500">
-                * למידות מעל 3 קרט, אנא צור קשר לקבלת מחיר
+                * לפרטים על יהלום מעל 3 קרט, ניתן ליצור קשר לקבלת מחיר
               </p>
             </>
           )}
@@ -145,13 +145,21 @@ const ProductPage = ({ product }: Props) => {
             <div>
               <h2 className="font-semibold mb-2 ">ניקיון:</h2>
               <p className="text-gray-700 mb-4 text-sm">
-                {product.description.clarity}
+                <span className="font-semibold">יהלום טבעי: </span>
+                {product.description.clarity.real}
+                <br />
+                <span className="font-semibold">יהלום מעבדה: </span>
+                {product.description.clarity.laboratory}
               </p>
             </div>
             <div>
               <h2 className="font-semibold mb-2 ">צבע:</h2>
               <p className="text-gray-700 mb-4 text-sm">
-                {product.description.color}
+                <span className="font-semibold">יהלום טבעי: </span>
+                {product.description.color.real}
+                <br />
+                <span className="font-semibold">יהלום מעבדה: </span>
+                {product.description.color.laboratory}
               </p>
             </div>
             <div>

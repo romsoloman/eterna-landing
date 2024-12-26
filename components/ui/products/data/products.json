@@ -1,210 +1,16 @@
 [
   {
-    "id": "6b3f280f-b055-4624-b084-00415172a394",
-    "title": "שרשרת טניס",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
-        {
-          "label": "10ct",
-          "price": {
-            "real": 40000,
-            "laboratory": 25000
-          }
-        }
-      ],
-      "shapes": ["עגול"],
-      "goldTypes": [
-        {
-          "name": "זהב צהוב",
-          "color": "#b9a582"
-        },
-        {
-          "name": "זהב לבן",
-          "color": "#cac8c6"
-        },
-        {
-          "name": "זהב אדום",
-          "color": "#c29a81"
-        }
-      ]
-    },
-    "src": "/videos/product1.MP4"
-  },
-  {
-    "id": "56a1aff0-9861-4d0d-9991-e1eea9e02694",
-    "title": "שרשרת טיפאני",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
-        {
-          "label": "0.3ct",
-          "price": {
-            "real": 3500,
-            "laboratory": 1600
-          }
-        },
-        {
-          "label": "0.4ct",
-          "price": {
-            "real": 4400,
-            "laboratory": 1850.0
-          }
-        },
-        {
-          "label": "0.5ct",
-          "price": {
-            "real": 5500,
-            "laboratory": 2400.0
-          }
-        },
-        {
-          "label": "0.75ct",
-          "price": {
-            "real": 7400,
-            "laboratory": 2800.0
-          }
-        },
-        {
-          "label": "1ct",
-          "price": {
-            "real": 11400,
-            "laboratory": 3200.0
-          }
-        },
-        {
-          "label": "1.25ct",
-          "price": {
-            "real": 14500,
-            "laboratory": 3400.0
-          }
-        },
-        {
-          "label": "1.5ct",
-          "price": {
-            "real": 20000,
-            "laboratory": 3800.0
-          }
-        },
-        {
-          "label": "2ct",
-          "price": {
-            "real": 35000,
-            "laboratory": 4900.0
-          }
-        }
-      ],
-      "colors": [
-        {
-          "name": "זהב צהוב",
-          "color": "#b9a582"
-        },
-        {
-          "name": "זהב לבן",
-          "color": "#cac8c6"
-        },
-        {
-          "name": "זהב אדום",
-          "color": "#c29a81"
-        }
-      ],
-      "shapes": ["עגול", "אובל", "לב", "טיפה", "מרקיזה"],
-      "goldTypes": [
-        {
-          "name": "זהב צהוב",
-          "color": "#b9a582"
-        },
-        {
-          "name": "זהב לבן",
-          "color": "#cac8c6"
-        },
-        {
-          "name": "זהב אדום",
-          "color": "#c29a81"
-        }
-      ]
-    },
-    "src": "/videos/product2.MP4"
-  },
-  {
-    "id": "new-earrings-001",
-    "title": "עגילי מרטיני",
-    "description": {
-      "color": "D-F",
-      "clarity": "VVS",
-      "cut": "Excellent",
-      "sizes": [
-        {
-          "label": "0.8ct (0.4 each)",
-          "price": {
-            "real": 6200,
-            "laboratory": 2400
-          }
-        },
-        {
-          "label": "1ct (0.5 each)",
-          "price": {
-            "real": 8200,
-            "laboratory": 2700
-          }
-        },
-        {
-          "label": "1.5ct (0.75 each)",
-          "price": {
-            "real": 14000,
-            "laboratory": 3000
-          }
-        },
-        {
-          "label": "2ct (1 each)",
-          "price": {
-            "real": 22000,
-            "laboratory": 3400
-          }
-        },
-        {
-          "label": "3ct (1.5 each)",
-          "price": {
-            "real": 48000,
-            "laboratory": 4600
-          }
-        },
-        {
-          "label": "4ct (2 each)",
-          "price": {
-            "real": 75000,
-            "laboratory": 5400
-          }
-        }
-      ],
-      "shapes": ["עגול"],
-      "goldTypes": [
-        {
-          "name": "זהב צהוב",
-          "color": "#b9a582"
-        },
-        {
-          "name": "זהב לבן",
-          "color": "#cac8c6"
-        },
-        {
-          "name": "זהב אדום",
-          "color": "#c29a81"
-        }
-      ]
-    },
-    "src": "/videos/product3.MP4"
-  },
-  {
     "id": "56a1aff0-9861-4d0d-9991-euojsa9e02694",
     "title": "טבעת סוליטר",
     "description": {
-      "color": "D-F",
-      "clarity": "VVS",
+      "color": {
+        "real": "D-G",
+        "laboratory": "D-F"
+      },
+      "clarity": {
+        "real": "VS-SI",
+        "laboratory": "VVS"
+      },
       "cut": "Excellent",
       "sizes": [
         {
@@ -304,5 +110,209 @@
       ]
     },
     "src": "/videos/product4.MP4"
+  },
+  {
+    "id": "56a1aff0-9861-4d0d-9991-e1eea9e02694",
+    "title": "שרשרת טיפאני",
+    "description": {
+      "color": {
+        "real": "D-G",
+        "laboratory": "D-F"
+      },
+      "clarity": {
+        "real": "VS-SI",
+        "laboratory": "VVS"
+      },
+      "cut": "Excellent",
+      "sizes": [
+        {
+          "label": "0.3ct",
+          "price": {
+            "real": 3500,
+            "laboratory": 1600
+          }
+        },
+        {
+          "label": "0.4ct",
+          "price": {
+            "real": 4400,
+            "laboratory": 1850.0
+          }
+        },
+        {
+          "label": "0.5ct",
+          "price": {
+            "real": 5500,
+            "laboratory": 2400.0
+          }
+        },
+        {
+          "label": "0.75ct",
+          "price": {
+            "real": 7400,
+            "laboratory": 2800.0
+          }
+        },
+        {
+          "label": "1ct",
+          "price": {
+            "real": 11400,
+            "laboratory": 3200.0
+          }
+        },
+        {
+          "label": "1.25ct",
+          "price": {
+            "real": 14500,
+            "laboratory": 3400.0
+          }
+        },
+        {
+          "label": "1.5ct",
+          "price": {
+            "real": 20000,
+            "laboratory": 3800.0
+          }
+        },
+        {
+          "label": "2ct",
+          "price": {
+            "real": 35000,
+            "laboratory": 4900.0
+          }
+        }
+      ],
+      "shapes": ["עגול", "אובל", "לב", "טיפה", "מרקיזה"],
+      "goldTypes": [
+        {
+          "name": "זהב צהוב",
+          "color": "#b9a582"
+        },
+        {
+          "name": "זהב לבן",
+          "color": "#cac8c6"
+        },
+        {
+          "name": "זהב אדום",
+          "color": "#c29a81"
+        }
+      ]
+    },
+    "src": "/videos/product2.MP4"
+  },
+  {
+    "id": "new-earrings-001",
+    "title": "עגילי מרטיני",
+    "description": {
+      "color": {
+        "real": "D-G",
+        "laboratory": "D-F"
+      },
+      "clarity": {
+        "real": "VS-SI",
+        "laboratory": "VVS"
+      },
+      "cut": "Excellent",
+      "sizes": [
+        {
+          "label": "0.8ct (0.4 each)",
+          "price": {
+            "real": 6200,
+            "laboratory": 2400
+          }
+        },
+        {
+          "label": "1ct (0.5 each)",
+          "price": {
+            "real": 8200,
+            "laboratory": 2700
+          }
+        },
+        {
+          "label": "1.5ct (0.75 each)",
+          "price": {
+            "real": 14000,
+            "laboratory": 3000
+          }
+        },
+        {
+          "label": "2ct (1 each)",
+          "price": {
+            "real": 22000,
+            "laboratory": 3400
+          }
+        },
+        {
+          "label": "3ct (1.5 each)",
+          "price": {
+            "real": 48000,
+            "laboratory": 4600
+          }
+        },
+        {
+          "label": "4ct (2 each)",
+          "price": {
+            "real": 75000,
+            "laboratory": 5400
+          }
+        }
+      ],
+      "shapes": ["עגול"],
+      "goldTypes": [
+        {
+          "name": "זהב צהוב",
+          "color": "#b9a582"
+        },
+        {
+          "name": "זהב לבן",
+          "color": "#cac8c6"
+        },
+        {
+          "name": "זהב אדום",
+          "color": "#c29a81"
+        }
+      ]
+    },
+    "src": "/videos/product3.MP4"
+  },
+  {
+    "id": "6b3f280f-b055-4624-b084-00415172a394",
+    "title": "שרשרת טניס",
+    "description": {
+      "color": {
+        "real": "D-G",
+        "laboratory": "D-F"
+      },
+      "clarity": {
+        "real": "VS-SI",
+        "laboratory": "VVS"
+      },
+      "cut": "Excellent",
+      "sizes": [
+        {
+          "label": "10ct",
+          "price": {
+            "real": 40000,
+            "laboratory": 25000
+          }
+        }
+      ],
+      "shapes": ["עגול"],
+      "goldTypes": [
+        {
+          "name": "זהב צהוב",
+          "color": "#b9a582"
+        },
+        {
+          "name": "זהב לבן",
+          "color": "#cac8c6"
+        },
+        {
+          "name": "זהב אדום",
+          "color": "#c29a81"
+        }
+      ]
+    },
+    "src": "/videos/product1.MP4"
   }
 ]
