@@ -105,7 +105,7 @@ const ProductPage = ({ product }: Props) => {
           {/* Dropdown for Sizes */}
           <h2 className="text-base font-semibold mb-4 ">בחר גודל :</h2>
           <select
-            className="block w-[40%] border border-gray-400 rounded-lg bg-gray-50 p-2 text-gray-800 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition duration-200 mb-4 text-base"
+            className="block w-[50%] border border-gray-400 rounded-lg bg-gray-50 p-2 text-gray-800 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition duration-200 mb-4 text-base"
             onChange={handleSizeChange}
             value={selectedSize.label}
           >
