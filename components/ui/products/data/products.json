@@ -246,14 +246,14 @@
           "label": "3ct (1.5 each)",
           "price": {
             "real": 48000,
-            "laboratory": 4600
+            "laboratory": 5000
           }
         },
         {
           "label": "4ct (2 each)",
           "price": {
             "real": 75000,
-            "laboratory": 5400
+            "laboratory": 5800
           }
         }
       ],
